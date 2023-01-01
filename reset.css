@@ -58,3 +58,37 @@ object {
   border-style: solid;
   border-color: theme('borderColor.DEFAULT', currentColor);
 }
+
+
+
+tailwind.config = {
+    thema: {
+        extend: {
+            colors: {
+                azul: {
+                    Ac: '#C5DFFF',
+                    Ae: '#061E3C',
+                    Am: '#1057B0'
+                }
+
+            },
+            fontFamily:{
+                inter: ['Inter', 'sans serif']
+            },
+            keyframes: {
+                sino_kf: {
+                    '0%, 100%': {
+                        transform: 'rotate(-10deg)'
+                    },
+                    '50%': {
+                        transform: 'rotate(10deg)'
+                    }
+
+                }
+            },
+            animations: {
+                sin: 'sino_kf 0.31s ease-in-out infinite'
+            }
+        }
+    }
+}
